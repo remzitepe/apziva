@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Stackoverflow Details
+{% endblock %}
+{% block content %}
+
+    <h1>Stackoverflow Result Details</h1>
+  
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Searched Keyword</th>
+                <th scope="col">Name</th>
+                <th scope="col">Username</th>
+                <th scope="col">Reputation</th>
+                <th scope="col">Reached</th>
+                <th scope="col">Questions</th>
+                <th scope="col">Answers</th>
+                <th scope="col">Member Time</th>
+                <th scope="col">Link</th>
+              </tr>
+        </thead>
+        <tbody>
+        {% for row in ind %}
+            <tr>
+            <td>{{ index.pop }}</td>      
+            <td>{{ keyword.pop }}</td>            
+            <td>{{ name.pop }}</td> 
+            <td>{{ username.pop}}</td> 
+            <td> {{ reputation.pop }}</td>
+            <td> {{ reached.pop }}</td>
+            <td>{{ questions.pop }}</td> 
+            <td> {{ answers.pop }}</td>
+            <td> {{ member_time.pop }}</td>
+            <td> <a href="{{ link.0 }}/" target="_blank">{{ link.pop }}</a></td>
+            </tr>
+        {% endfor %}
+        </tbody>
+      
+    </table>
+    
+{% endblock %}

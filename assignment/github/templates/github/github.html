@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+{% block title %}
+    Github Searches
+{% endblock %}
+
+{% block content %}
+<ul>
+    <li><a href="github_details">Github Search Details</a></li>
+
+</ul>
+<h1 class="text-center"> Search for Candidates at Github</h1>
+<div class="row align-items-center justify-content-center">
+    <div class="row">
+        <form method="post">
+            {% csrf_token %}
+              <div class="col align-center">
+                {{ form.keyword| as_crispy_field }}
+              </div>
+              <div class="col align-self-center">
+                {{ form.candidate_num | as_crispy_field }}
+              </div>
+              <div class="col align-self-center">
+                {{ form.sorting | as_crispy_field }}
+              </div>
+              <div class="col align-self-center">
+                {{ form.sort_type | as_crispy_field }}
+              </div>
+              <div class="col align-self-center">
+                <button type="submit" class="btn btn-success" >Search for Candidates</button>
+              </div>
+            <p> After searching for candidates and page loading please click on Github Search Details*</p>
+    </div>
+</div>
+
+{% endblock %}

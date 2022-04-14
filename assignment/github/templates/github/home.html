@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block title %}
+    Homepage
+{% endblock %}
+
+{% block content %}
+
+    <h1 class="text-center">Home Page</h1>
+    <p class="text-center text-dark">You can start searching for appropriate candidates in Github or Stackoverflow by clicking links above :)</p>
+    <p class="text-center text-dark">Please look at the ReadMe file for some specifis before doing any search</p>
+    <div class="row align-items-center justify-content-center">
+        <img src="{% static 'img/github.png' %}" alt="">
+        <img src="{% static 'img/stackoverflow.png' %}" alt="">
+    </div>
+
+{% endblock %}

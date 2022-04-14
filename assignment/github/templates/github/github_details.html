@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Github Details
+{% endblock %}
+{% block content %}
+
+    <h1>Github Result Details</h1>
+  
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Username</th>
+                <th scope="col">Bio</th>
+                <th scope="col">Location</th>
+                <th scope="col">Followers</th>
+                <th scope="col">Followings</th>
+                <th scope="col">Repository Number</th>
+                <th scope="col">Project Number</th>
+                <th scope="col">Star Number</th>
+                <th scope="col">Link</th>
+
+              </tr>
+        </thead>
+        <tbody>
+        {% for row in ind %}
+            <tr>
+            <td>{{ index.pop }}</td>         
+            <td>{{ names.pop }}</td> 
+            <td>{{ usernames.pop}}</td> 
+            <td> {{ bio.pop }}</td>
+            <td> {{ location.pop }}</td>
+            <td>{{ followers.pop }}</td> 
+            <td> {{ followings.pop }}</td>
+            <td> {{ repo_num.pop }}</td>
+            <td> {{ project_num.pop }}</td>
+            <td> {{ star_num.pop }}</td>
+            <td> <a href="http://{{ link.0 }}/" target="_blank">{{ link.pop }}</a></td>
+            </tr>
+        {% endfor %}
+        </tbody>
+      
+    </table>
+    
+{% endblock %}
