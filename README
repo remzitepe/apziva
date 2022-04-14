@@ -1,18 +1,15 @@
 # Search for appropriate candidates on Github or Stackoverflow
 
 It searches for the candidates for our matches
-I hope integration with my database would not cause problem. I know it will cause a problem. In case of such thing you can contact me so
-I can work on my computer.
-Also, I used different tecniques for Github and Stackoverflow. For Github, I basically render the html file with beatiful soup while I 
-used stackapi for Stackoverflow.
+I hope integration with my database would not cause problem. I know it will cause a problem. In case of such thing you can contact me so I can work on my computer.
+Also, I used different tecniques for Github and Stackoverflow. For Github, I basically render the html file with beatiful soup while I used stackapi for Stackoverflow.
 Please activate my-env by typing my-env\Scripts\activate, then type cd assignment, then run the server typing python manage.py runserver. 
 
 
 ## Using Github Search
 
-You should write any sentence that is either one word or multiple, then enter candidate nunmber you would like to see, then in sorting type write desc
-for descending, write asc for ascending, and for the sort type write one of the followings: follower, repositories or best match. Then, wait until page is
-reloaded again since it takes a lot of time to retrieve data from Github and save it to PostgreSQL. Then, you can look at the details from the Github Details 
+You should write any sentence that is either one word or multiple, then enter candidate nunmber you would like to see, then in sorting type write desc for descending, write asc for ascending, and for the sort type write one of the followings: follower, repositories or best match.
+Then, wait until page is reloaded again since it takes a lot of time to retrieve data from Github and save it to PostgreSQL. Then, you can look at the details from the Github Details 
 page.
 
 ## Using StackoverFlow Search
